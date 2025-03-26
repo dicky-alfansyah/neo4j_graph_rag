@@ -24,7 +24,7 @@ To enable **RAGAS evaluation** for custom LLMs:
 2. Add your model to:
 
 ```
-export const supportedLLmsForGroundTruthMetrics = [
+export const supportedLLmsForRagas = [
   'deepseek-r1',
   '...........'
 ];
