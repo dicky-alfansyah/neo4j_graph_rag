@@ -1,4 +1,4 @@
-## Instalasi Frontend :
+## Frontend Installation in Development Mode :
 - Frontend :
   ```bash
   cd frontend
@@ -6,7 +6,7 @@
   yarn
   yarn dev
   ```
-## Instalasi Backend :
+## Installation in Development Mode :
 - Backend :
   ```bash
   cd backend
@@ -14,7 +14,7 @@
   python3 -m venv .venvNeo4j
   . .venvNeo4j/bin/activate
   pip install -r requirements.txt
-  uvicorn main:app
+  uvicorn main:app --reload
   ```
 ## Add Support for Custom RAGAS
 
@@ -61,7 +61,7 @@ VITE_LLM_MODELS_PROD="deepseek-r1,deepseek-v3,gemma3-27b,llama3.3-70b"
 - **Frontend**: [http://localhost:8080](http://localhost:8080)
 - **Backend**: [http://localhost:8000](http://localhost:8000)
 
-## Run Frontend and Backend with PM2
+## Run Frontend and Backend in Production Mode with pm2
 
 To run both the frontend and backend using pm2, follow these steps:
 
@@ -74,7 +74,9 @@ To run both the frontend and backend using pm2, follow these steps:
   cd frontend
   cp example.env .env
   yarn
-  pm2 start "yarn dev" --name frontend-app
+  yarn build
+  npm install -g serve
+  pm2 start "serve -s dist -l tcp://0.0.0.0:8080" --name frontend-app
   ```
 - Run use pm2 Backend  :
    ```
@@ -83,7 +85,7 @@ To run both the frontend and backend using pm2, follow these steps:
   python3 -m venv .venvNeo4j
   . .venvNeo4j/bin/activate
   pip install -r requirements.txt
-  pm2 start "uvicorn main:app" --name backend-app
+  pm2 start "uvicorn main:app --host 0.0.0.0 --port 8000" --name backend-app
   ```
 ## Run Frontend and Backend with Docker Compose
 
