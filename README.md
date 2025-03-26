@@ -6,7 +6,7 @@
   yarn
   yarn dev
   ```
-## Installation in Development Mode :
+## Backend Installation in Development Mode :
 - Backend :
   ```bash
   cd backend
