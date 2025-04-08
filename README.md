@@ -107,8 +107,8 @@ pip install python-magic-bin==0.4.13
 ```
 ## Screenshot
 
-![Screenshot](https://i.ibb.co.com/SwSqrHvr/Screenshot-2025-03-27-001604.png)
+![Screenshot](https://i.imghippo.com/files/Jks4586Cqc.png)
 
-![Screenshot](https://i.ibb.co.com/4wNK7gVm/Screenshot-2025-03-27-001501.png)
+![Screenshot](https://i.imghippo.com/files/jeD4191UiE.png)
 
-![Screenshot](https://i.ibb.co.com/ccSgbw7M/Screenshot-2025-03-27-001932.png)
+![Screenshot](https://i.imghippo.com/files/LVR7738Wuo.png)
